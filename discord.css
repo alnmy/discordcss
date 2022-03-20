@@ -2,11 +2,6 @@
  * Guild Sidebar 
 */
 
-/* 'Home' button badge */
-div[class*="lowerBadge"] {
-    position: inherit !important; /* make badge appear at top-left */
-}
-
 /* 'Home' button */
 div[class*="tutorialContainer-"] {
     margin-top: 6px; /* looks more comfy */
