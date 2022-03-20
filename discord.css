@@ -1,0 +1,55 @@
+/*
+ * Guild Sidebar 
+*/
+
+/* 'Home' button badge */
+div[class*="lowerBadge"] {
+    position: inherit !important; /* make badge appear at top-left */
+}
+
+/* 'Home' button */
+div[class*="tutorialContainer-"] {
+    margin-top: 6px; /* looks more comfy */
+}
+
+/* sidebar */
+nav[aria-label*="Servers sidebar"] {
+    width: 64px;
+    margin: -4px;
+    margin-left: 2px;
+}
+
+/* sidebar items */
+div[class*="listItem-"] {
+    width: 64px;
+}
+
+/*
+ * Channel Sidebar
+*/
+
+div[class*="sidebar-"] {
+    width: 164px;
+}
+
+div[id*="channels"][class*="scroller"] {
+    overflow: hidden hidden !important; /* no scrollbar */
+}
+
+div[class*="content-"]  { /* make channel names take up all the space */
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+
+header[class*="header-"] {
+    padding: 2px;
+}
+
+h1[class*="name-"] {
+    overflow: clip;
+}
+
+div[class*="headerChildren-"], div[class*="guildIconContainer-"] {
+    transform: scale(0);
+}
