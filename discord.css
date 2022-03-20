@@ -33,13 +33,15 @@ div[class*="sidebar-"] {
 }
 
 div[id*="channels"][class*="scroller"] {
-    overflow: hidden hidden !important; /* no scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
 }
 
-div[class*="content-"]  { /* make channel names take up all the space */
+div[class*="content-"]  {
     margin: 0;
     padding: 0;
-    width: 100%; 
+    width: 100%;
 }
 
 header[class*="header-"] {
@@ -48,6 +50,7 @@ header[class*="header-"] {
 
 h1[class*="name-"] {
     overflow: clip;
+    position: absolute;
 }
 
 div[class*="headerChildren-"], div[class*="guildIconContainer-"] {
