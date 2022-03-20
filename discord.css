@@ -10,8 +10,14 @@ div[class*="tutorialContainer-"] {
 /* sidebar */
 nav[aria-label*="Servers sidebar"] {
     width: 64px;
-    margin: -4px;
-    margin-left: 2px;
+    margin: 0;
+    margin-left: -4px;
+    margin-right: -8px;
+}
+
+/* server indicator */
+div[class*="pill"] {
+    transform: translate(4px);
 }
 
 /* sidebar items */
@@ -33,22 +39,50 @@ div[id*="channels"][class*="scroller"] {
     overflow-y: scroll; 
 }
 
+/* channel name takes up all space */
 div[class*="content-"]  {
     margin: 0;
     padding: 0;
     width: 100%;
+    padding-left: 8px; 
+}
+
+/* no # icon */
+div[class*="iconContainer"][aria-label*="Text"] {
+    display:none;
+}
+
+/* Hide the action bar nametag and status */
+section > div[class*="container"] > [class*='nameTag-'] {
+    display:none;
+}
+
+/* no useless padding at top of channels bar */
+li[class*="containerDefault"] {
+    padding-top: 0px;
+}
+
+/*
+ * Top bar
+ */ 
+
+section[aria-label="Channel header"] {
+    height: 28px;
 }
 
 header[class*="header-"] {
     padding: 2px;
+    height: 28px;
 }
 
+
+/* no ^ on server name or boost indicator */
+div[class*="headerChildren-"], div[class*="guildIconContainer-"] {
+    display: none;
+}
+
+/* server name takes up all space */
 h1[class*="name-"] {
     overflow: clip;
     position: absolute;
-    padding-left: 4px; 
-}
-
-div[class*="headerChildren-"], div[class*="guildIconContainer-"] {
-    display: none;
 }
