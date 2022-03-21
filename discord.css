@@ -11,7 +11,7 @@ div[class*="tutorialContainer-"] {
 nav[aria-label*="Servers sidebar"] {
     width: 64px;
     margin: 0;
-    margin-left: 4px;
+    margin-left: -5px;
     margin-right: -12px;
 }
 
