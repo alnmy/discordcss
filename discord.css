@@ -87,6 +87,12 @@ h1[class*="name-"] {
     position: absolute;
 }
 
+/*useless buttons*/
+div[aria-label="Notification Settings"],
+div[aria-label="Help"] {
+    display: none;
+}
+
 /*
  * Messages
 */
