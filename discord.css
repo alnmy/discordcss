@@ -86,3 +86,14 @@ h1[class*="name-"] {
     overflow: clip;
     position: absolute;
 }
+
+/*
+ * Messages
+*/
+div[class*="compact-"] div[class*="contents-"] {
+    margin-left: -7em;
+}
+form[class*="form-"] {
+    padding-left: 0;
+    margin-left: -0.25em;
+}
