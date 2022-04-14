@@ -102,7 +102,6 @@ div[class*="compact-"] div[class*="contents-"] {
 form[class*="form-"] {
     padding-left: 0;
     margin-left: -0.25em;
-    margin-bottom: -1em;
 }
 button[aria-label="Send a gift"],
 button[aria-label="Open sticker picker"] {
