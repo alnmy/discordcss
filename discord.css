@@ -97,3 +97,7 @@ form[class*="form-"] {
     padding-left: 0;
     margin-left: -0.25em;
 }
+button[aria-label="Send a gift"],
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
